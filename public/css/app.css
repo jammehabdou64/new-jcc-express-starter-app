@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.max-container {
+  @apply max-w-7xl mx-auto px-5 sm:px-8 md:px-16;
+}
+body {
+  font-family:
+    BlinkMacSystemFont,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.openModal {
+  @apply block fixed w-full top-0 left-0 right-0 h-screen  z-40 md:hidden bg-[rgba(0,0,0,0.67)] transition-all  ease-out duration-1000;
+}
+
+.modal-container > nav {
+  @apply bg-white h-full w-[97.5%];
+}
