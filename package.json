@@ -28,12 +28,11 @@
     "i": "^0.3.7",
     "inflection": "^3.0.0",
     "jsonwebtoken": "^9.0.2",
-    "jcc-express-mvc":"1.2.5",
+    "jcc-express-mvc":"1.2.8",
     "module-alias": "^2.2.3",
     "mysql2": "^3.11.0",
     "npm": "^10.8.2",
     "passport-local": "^1.0.0",
-    "repl-cli": "^2.0.1",
     "ts-node-dev": "^2.0.0",
     "validator": "^13.12.0"
   },
