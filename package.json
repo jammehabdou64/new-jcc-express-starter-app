@@ -29,6 +29,7 @@
     "inflection": "^3.0.0",
     "jsonwebtoken": "^9.0.2",
     "jcc-express-mvc":"1.2.8",
+    "jcc-eloquent":"0.0.2",
     "module-alias": "^2.2.3",
     "mysql2": "^3.11.0",
     "npm": "^10.8.2",

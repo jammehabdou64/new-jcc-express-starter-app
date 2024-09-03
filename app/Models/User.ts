@@ -1,3 +1,3 @@
-import { Model } from "jcc-express-mvc";
+import { Model } from "jcc-eloquent";
 
 export class User extends Model {}
