@@ -1,3 +1,3 @@
-import { Model } from "framework/index";
+import { Model } from "jcc-express-mvc";
 
 export class User extends Model {}

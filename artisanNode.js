@@ -1,2 +1,2 @@
-const NodeArtisanCommand = require("./framework/Command-Line/NodeArtisanCommand");
+import {NodeArtisanCommand} from "jcc-express-mvc";
 NodeArtisanCommand(process.argv);

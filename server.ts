@@ -1,3 +1,3 @@
-import { server } from "./framework";
+import { server } from "jcc-express-mvc";
 
 server.listen();
