@@ -1,4 +1,4 @@
-import { Request, Response, Next, bcrypt, Auth } from "@framework/index";
+import { Request, Response, Next, bcrypt, Auth } from "jcc-express-mvc";
 import { User } from "@/Model/User";
 // import { User } from "../../Models/User";
 export class UsersController {

@@ -1,4 +1,4 @@
-import { Schema } from "@framework/index";
+const { Schema } = require("jcc-eloquent");
 class Migration {
   up() {
     return Schema.create("users", (table) => {
@@ -11,3 +11,5 @@ class Migration {
     });
   }
 }
+
+module.exports = new Migration();
