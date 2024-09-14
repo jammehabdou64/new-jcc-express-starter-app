@@ -1,5 +1,5 @@
 import { UsersController } from "@Controllers/UsersController";
-import {Auth, Route, auth} from "jcc-express-mvc"
+import { Auth, Route, auth } from "jcc-express-mvc";
 
 Route.get("/", (req, res) => {
   return res.render("index", {
