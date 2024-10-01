@@ -1,5 +1,5 @@
-const { Schema } = require("jcc-eloquent");
-class Migration {
+import { Schema } from "jcc-eloquent";
+export class Migration {
   up() {
     return Schema.create("users", (table) => {
       table.id();
@@ -11,5 +11,3 @@ class Migration {
     });
   }
 }
-
-module.exports = new Migration();

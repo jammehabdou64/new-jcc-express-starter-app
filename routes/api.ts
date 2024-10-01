@@ -1,6 +1,6 @@
-import {ApiRoute} from"jcc-express-mvc"
+import { User } from "@/Model/User";
+import { ApiRoute } from "jcc-express-mvc";
 
-ApiRoute.get("/", function (req, res) {
-  return res.json({ msg: req.url });
+ApiRoute.get("/", async function (req, res) {
+  return res.json({ msg: await User.with("hell").get() });
 });
-
