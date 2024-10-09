@@ -1,2 +1,5 @@
-import { NodeArtisanCommand } from "jcc-express-mvc/cli.js";
-NodeArtisanCommand(process.argv);
+import { getArgv } from "jcc-express-mvc/cli";
+(async function () {
+  await getArgv(process.argv);
+  process.exit(0);
+})();
