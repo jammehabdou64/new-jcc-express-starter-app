@@ -1,3 +1,5 @@
-import { consoleInput } from "jcc-express-mvc/cli";
+import { app } from "./bootstrap/app";
 
-consoleInput();
+const tinker: any = app.resolve("Tinker");
+
+tinker.consoleInput();

@@ -1,5 +1,8 @@
-import { getArgv } from "jcc-express-mvc/cli";
+import { app } from "./bootstrap/app";
+
+const kernel = app.resolve<any>("ConsoleKernel");
+
 (async function () {
-  await getArgv(process.argv);
+  await kernel.parse(process.argv);
   process.exit(0);
 })();
