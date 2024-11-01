@@ -1,4 +1,5 @@
-import { Request, Response, Next, bcrypt, Auth } from "jcc-express-mvc";
+import { bcrypt, Auth } from "jcc-express-mvc";
+import { Request, Response, Next } from "jcc-express-mvc/http";
 import { User } from "@/Model/User";
 export class UsersController {
   //
@@ -22,7 +23,7 @@ export class UsersController {
       name: req.body.name,
       email: req.body.email,
       password: await bcrypt(req.body.password),
-      age: Math.floor(Math.random() * 100),
+      primary_phone: "7501035",
     });
 
     return save
