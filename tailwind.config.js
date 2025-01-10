@@ -1,8 +1,9 @@
 module.exports = {
   content: [
     "./resources/views/**/*.{html,js,hbs}",
-    "./resources/views/layout.hbs",
+    // "./resources/views/layout.hbs",
   ],
+  // content: ["./resources/views/**/*.blade.html", "./resources/js/**/*.jsx"],
   theme: {
     extend: {
       fontFamily: {

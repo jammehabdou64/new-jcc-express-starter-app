@@ -1,18 +1,18 @@
-import helmet from "helmet";
 import cors from "cors";
 import session from "express-session";
-// import cookieSession from "cookie-session";
 import cookieParser from "cookie-parser";
 import flash from "connect-flash";
+import fileUpload from "express-fileupload";
+import morgan from "morgan";
+import { auth, guest } from "jcc-express-mvc";
 
 export class Kernel {
   //
   //
   protected middleware = [
+    morgan("dev"),
     cookieParser(),
     cors(),
-    helmet(),
-    // cookieSession({ keys: ["key1", "key2"] }),
     session({
       secret: "ggggggg",
       resave: false,
@@ -20,5 +20,11 @@ export class Kernel {
       cookie: { maxAge: 60000 },
     }),
     flash(),
+    fileUpload(),
   ];
+
+  static middlewareAliases = {
+    auth,
+    guest,
+  };
 }

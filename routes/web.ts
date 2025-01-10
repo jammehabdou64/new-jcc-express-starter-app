@@ -8,9 +8,11 @@ Route.get("/", (req, res) => {
   });
 });
 
-Route.get("/login", (req, res) => res.render("auth/login"));
+Route.middleware("guest").get("/login", (req, res) => res.render("auth/login"));
 
-Route.get("/register", (req, res) => res.render("auth/register"));
+Route.middleware("guest").get("/register", (req, res) =>
+  res.render("auth/register"),
+);
 
 Route.middleware(auth).get("/home", (req, res, next) => {
   return res.render("home");
