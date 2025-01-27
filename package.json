@@ -29,7 +29,7 @@
     "fs-extra": "^11.2.0",
     "inflection": "^3.0.2",
     "jcc-eloquent": "^1.0.4",
-    "jcc-express-mvc": "^1.4.3",
+    "jcc-express-mvc": "^1.4.6",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "mysql2": "^3.12.0",
