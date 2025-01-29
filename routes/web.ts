@@ -1,5 +1,5 @@
 import { UsersController } from "@Controllers/UsersController";
-import { Auth, auth } from "jcc-express-mvc/";
+import { Auth } from "jcc-express-mvc/";
 import { Route } from "jcc-express-mvc/Route";
 
 Route.get("/", (req, res) => {
@@ -14,7 +14,7 @@ Route.middleware("guest").get("/register", (req, res) =>
   res.render("auth/register"),
 );
 
-Route.middleware(auth).get("/home", (req, res, next) => {
+Route.middleware("auth").get("/home", (req, res, next) => {
   return res.render("home");
 });
 

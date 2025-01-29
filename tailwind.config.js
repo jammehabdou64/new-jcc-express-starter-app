@@ -1,9 +1,8 @@
 module.exports = {
   content: [
     "./resources/views/**/*.{html,js,hbs}",
-    // "./resources/views/layout.hbs",
+    "./resources/js/**/*.{jsx,js,vue}",
   ],
-  // content: ["./resources/views/**/*.blade.html", "./resources/js/**/*.jsx"],
   theme: {
     extend: {
       fontFamily: {
@@ -17,16 +16,12 @@ module.exports = {
       screens: {
         xs: "350px",
         sm: "640px",
-        // => @media (min-width: 640px) { ... }
 
         md: "768px",
-        // => @media (min-width: 768px) { ... }
 
         lg: "1024px",
-        // => @media (min-width: 1024px) { ... }
 
         xl: "1280px",
-        // => @media (min-width: 1280px) { ... }
 
         "2xl": "1536px",
       },
