@@ -5,9 +5,8 @@
   "scripts": {
     "start": "node -r tsconfig-paths/register server.js",
     "dev": "ts-node-dev -r tsconfig-paths/register server.ts",
-    "watch": "npx tailwindcss -i ./public/css/app.css -o  ./resources/css/main.css --watch",
+    "watch": "vite",
     "build": "tsc && ts-node artisanNode build",
-    "vite": "vite",
     "vite-build": "vite build"
   },
   "keywords": [],
@@ -29,7 +28,7 @@
     "express-session": "^1.18.1",
     "fs-extra": "^11.2.0",
     "inflection": "^3.0.2",
-    "jcc-eloquent": "^1.0.4",
+    "jcc-eloquent": "^1.0.5",
     "jcc-express-mvc": "^1.4.6",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
