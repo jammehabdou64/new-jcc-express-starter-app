@@ -1,5 +1,5 @@
-import { FormRequest } from "jcc-express-mvc/FormRequest";
-import { Request } from "jcc-express-mvc/http";
+import { FormRequest } from "jcc-express-mvc/core/FormRequest";
+import { Request } from "jcc-express-mvc/core/http";
 
 export class UserRequest extends FormRequest {
   constructor(req: Request) {

@@ -1,6 +1,6 @@
-import { ConsoleKernel } from "jcc-express-mvc/cli";
-import { app } from "jcc-express-mvc/Dependency";
+import { ConsoleKernel } from "jcc-express-mvc/core/cli";
+import { app } from "jcc-express-mvc/core/Dependency";
 
-app.bind<ConsoleKernel>("ConsoleKernel", () => new ConsoleKernel());
+app.singleton<ConsoleKernel>("ConsoleKernel", () => new ConsoleKernel());
 
 export { app };

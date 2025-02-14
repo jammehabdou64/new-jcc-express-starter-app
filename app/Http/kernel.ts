@@ -8,7 +8,7 @@ import { auth, guest } from "jcc-express-mvc";
 
 export class Kernel {
   //
-  //
+
   protected middleware = [
     morgan("dev"),
     cookieParser(),
