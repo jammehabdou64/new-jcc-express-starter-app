@@ -9,7 +9,7 @@ import { auth, guest } from "jcc-express-mvc";
 export class Kernel {
   //
 
-  protected middleware = [
+  public middlewares = [
     morgan("dev"),
     cookieParser(),
     cors(),
@@ -23,7 +23,7 @@ export class Kernel {
     fileUpload(),
   ];
 
-  static middlewareAliases = {
+  public middlewareAliases = {
     auth,
     guest,
   };
